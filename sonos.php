@@ -41,7 +41,7 @@ class Sonos
         $response = new StdClass();
         $code  = $this->generateRandomString(8);
         $response->getAppLinkResult->authorizeAccount->appUrlStringId = 'SIGN IN';
-        $response->getAppLinkResult->authorizeAccount->deviceLink->regUrl = 'http://d3c6-158-181-187-181.ngrok.io/register.php?id='.$params->householdId.'&code='.$code;
+        $response->getAppLinkResult->authorizeAccount->deviceLink->regUrl = 'https://sonos.axeldemos.com/register.php?id='.$params->householdId.'&code='.$code;
         $response->getAppLinkResult->authorizeAccount->deviceLink->linkCode = $code;
         $response->getAppLinkResult->authorizeAccount->deviceLink->showLinkCode = true;
         return $response;
