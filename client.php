@@ -77,7 +77,7 @@ function fetchAccount($token,$key)
 
 function getStreams($token,$key,$count = 100,$index = 0)
 {
-    $body = fetch("https://easyonholdcloud.com/api/v1/streams?token=".$token."&id=".$key);
+    $body = fetch("https://easyonholdcloud.com/api/v1/brandistreams?token=".$token."&id=".$key);
     $items = json_decode($body);
     $mediaMetadata = [];
     foreach ($items as $item){
