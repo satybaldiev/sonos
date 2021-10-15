@@ -67,7 +67,7 @@ function fetchAccount($token,$key)
     $result = new StdClass();
     $result->streamsIDs = [];
     $result->podcastIDs = [];
-    $body = fetch("https://easyonholdcloud.com/api/v1/streams?token=".$token."&id=".$key);
+    $body = fetch("https://easyonholdcloud.com/api/v1/brandistreams?token=".$token."&id=".$key);
     foreach (json_decode($body) as $item){
         $result->streamsIDs[] = $item->id;
     }
