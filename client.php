@@ -87,7 +87,7 @@ function getStreams($token,$key,$count = 100,$index = 0)
         $current->url = $item->url;
         $current->mimeType = 'audio/mpeg';
         $current->itemType = 'stream';
-        $current->streamMetadata->logo = 'https://easyonholdcloud.com/assets/img/Logo_blue.png';
+        $current->streamMetadata->logo = 'https://sonos.axeldemos.com/img.png';
         $mediaMetadata[] = $current;
     }
     return $mediaMetadata;
